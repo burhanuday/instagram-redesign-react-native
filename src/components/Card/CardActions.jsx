@@ -19,7 +19,7 @@ const CardActions = () => {
         </View>
       </View>
 
-      <View style={[styles.action, { marginRight: 0 }]}>
+      <View style={[styles.action, styles.lastAction]}>
         <MaterialCommunityIcons name="bookmark-outline" size={24} color={colors.onSurface} />
       </View>
     </View>
@@ -49,6 +49,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginLeft: 5,
     fontFamily: "Inter_500Medium",
+  },
+  lastAction: {
+    marginRight: 0,
   },
 });
 
