@@ -6,7 +6,7 @@ import Comment from "./Comment";
 
 const Comments = () => {
   return (
-    <Card style={styles.card} elevation={20}>
+    <Card style={styles.card} elevation={5}>
       <Text style={styles.title}>Comments:</Text>
       <Comment />
       <Comment />

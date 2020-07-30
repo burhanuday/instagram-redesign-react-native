@@ -13,7 +13,7 @@ const Post = ({ openScreen }) => {
 
   return (
     <TouchableWithoutFeedback onPress={() => (openScreen ? navigation.push("PostDetail") : null)}>
-      <Card style={styles.card} elevation={20}>
+      <Card style={styles.card} elevation={5}>
         <Header />
         <PostImage />
         <CardActions />
