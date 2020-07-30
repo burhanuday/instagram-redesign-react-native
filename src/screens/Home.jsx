@@ -5,16 +5,19 @@ import Card from "@components/Card";
 
 import Header from "@components/Header";
 
+const posts = [1, 2, 3, 4, 5];
+
 export default function Home() {
   return (
     <Surface style={[styles.container, { paddingTop: StatusBar.currentHeight }]}>
       <Header />
 
       <FlatList
-        data={new Array(3).map((item, index) => index)}
-        renderItem={({ item }) => <Card key={item} />}
-        keyExtractor={(item) => item}
+        data={posts}
+        renderItem={({ item }) => <Card />}
+        keyExtractor={(item) => `${item}key`}
       />
+      {/* <Card /> */}
     </Surface>
   );
 }

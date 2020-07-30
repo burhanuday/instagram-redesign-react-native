@@ -1,10 +1,10 @@
 import React from "react";
-import { StyleSheet } from "react-native";
-import { Text, Surface } from "react-native-paper";
+import { StyleSheet, View } from "react-native";
+import { Text } from "react-native-paper";
 
 const Comment = () => {
   return (
-    <Surface style={styles.container}>
+    <View style={styles.container}>
       <Text style={styles.name}>
         burhanuday{" "}
         <Text style={styles.text}>
@@ -12,7 +12,7 @@ const Comment = () => {
           productivity, growth, and discovery.
         </Text>
       </Text>
-    </Surface>
+    </View>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet } from "react-native";
-import { Card, Text, Surface } from "react-native-paper";
+import { Card, Text } from "react-native-paper";
 
 import Comment from "./Comment";
 

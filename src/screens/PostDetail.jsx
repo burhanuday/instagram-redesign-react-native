@@ -16,9 +16,9 @@ export default function PostDetail() {
 }
 
 const styles = StyleSheet.create({
-  scroll: {
-    flex: 1,
-  },
+  // scroll: {
+  //   flex: 1,
+  // },
   container: {
     flex: 1,
   },

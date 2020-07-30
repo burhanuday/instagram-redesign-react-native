@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, TouchableWithoutFeedback } from "react-native";
 import { Card } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 
@@ -12,12 +12,14 @@ const Post = () => {
   const navigation = useNavigation();
 
   return (
-    <Card onPress={() => navigation.push("PostDetail")} style={styles.card} elevation={20}>
-      <Header />
-      <PostImage />
-      <CardActions />
-      <Caption />
-    </Card>
+    <TouchableWithoutFeedback onPress={() => navigation.push("PostDetail")}>
+      <Card style={styles.card} elevation={20}>
+        <Header />
+        <PostImage />
+        <CardActions />
+        <Caption />
+      </Card>
+    </TouchableWithoutFeedback>
   );
 };
 
