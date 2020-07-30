@@ -1,15 +1,20 @@
 import React from "react";
-import { StyleSheet, StatusBar } from "react-native";
+import { StyleSheet, StatusBar, FlatList } from "react-native";
 import { Surface } from "react-native-paper";
 import Card from "@components/Card";
 
 import Header from "@components/Header";
 
-export default function App() {
+export default function Home() {
   return (
     <Surface style={[styles.container, { paddingTop: StatusBar.currentHeight }]}>
       <Header />
-      <Card />
+
+      <FlatList
+        data={new Array(3).map((item, index) => index)}
+        renderItem={({ item }) => <Card key={item} />}
+        keyExtractor={(item) => item}
+      />
     </Surface>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { useTheme } from "react-native-paper";
+import { useTheme, Surface } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const Header = () => {
   const { colors } = useTheme();
 
   return (
-    <View style={styles.container}>
+    <Surface style={styles.container}>
       <MaterialCommunityIcons name="instagram" size={32} color={colors.onSurface} />
       <View style={styles.actions}>
         <MaterialCommunityIcons
@@ -23,7 +23,7 @@ const Header = () => {
           color={colors.onSurface}
         />
       </View>
-    </View>
+    </Surface>
   );
 };
 

@@ -3,7 +3,8 @@ import { NavigationContainer, DefaultTheme, DarkTheme } from "@react-navigation/
 import { useColorScheme } from "react-native-appearance";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Home from "../screens/Home";
+import Home from "@screens/Home";
+import PostDetail from "@screens/PostDetail";
 
 const AppStack = createStackNavigator();
 
@@ -19,6 +20,7 @@ const AppNavigator = () => {
         initialRouteName="Home"
       >
         <AppStack.Screen name="Home" component={Home} />
+        <AppStack.Screen name="PostDetail" component={PostDetail} />
       </AppStack.Navigator>
     </NavigationContainer>
   );
