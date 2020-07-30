@@ -8,11 +8,11 @@ import PostImage from "./PostImage";
 import CardActions from "./CardActions";
 import Caption from "./Caption";
 
-const Post = () => {
+const Post = ({ openScreen }) => {
   const navigation = useNavigation();
 
   return (
-    <TouchableWithoutFeedback onPress={() => navigation.push("PostDetail")}>
+    <TouchableWithoutFeedback onPress={() => (openScreen ? navigation.push("PostDetail") : null)}>
       <Card style={styles.card} elevation={20}>
         <Header />
         <PostImage />

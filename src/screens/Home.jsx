@@ -14,7 +14,7 @@ export default function Home() {
 
       <FlatList
         data={posts}
-        renderItem={({ item }) => <Card />}
+        renderItem={({ item }) => <Card openScreen={true} />}
         keyExtractor={(item) => `${item}key`}
       />
       {/* <Card /> */}
