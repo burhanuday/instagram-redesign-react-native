@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, StatusBar, FlatList } from "react-native";
+import { StyleSheet, StatusBar, FlatList, ScrollView } from "react-native";
 import { Surface } from "react-native-paper";
 
 import Card from "@components/Card";
@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <Surface style={[styles.container, { paddingTop: StatusBar.currentHeight }]}>
       <Header />
-
-      <Stories />
-
-      <Posts />
+      <ScrollView>
+        <Stories />
+        <Posts />
+      </ScrollView>
     </Surface>
   );
 }
