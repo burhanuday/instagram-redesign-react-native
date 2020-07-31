@@ -24,7 +24,7 @@ export const stories = [
     username: "Dunthorne",
     url: "cdunthorne2@omniture.com",
     avatar: `${baseImageURL}?random=${Math.random() * 100}`,
-    viewed: true,
+    viewed: false,
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const stories = [
     username: "Tenpenny",
     url: "atenpenny3@latimes.com",
     avatar: `${baseImageURL}?random=${Math.random() * 100}`,
-    viewed: true,
+    viewed: false,
   },
   {
     id: 5,
