@@ -10,8 +10,10 @@ import { posts } from "../mock/posts";
 
 const Posts = () => (
   <FlatList
-    data={posts}
-    renderItem={({ item }) => <Card openScreen={true} post={item} />}
+    data={[{ stories: true }, ...posts]}
+    renderItem={({ item, index }) =>
+      index === 0 ? <Stories /> : <Card openScreen={true} post={item} />
+    }
     keyExtractor={(item) => `${item.id}key`}
   />
 );
@@ -20,10 +22,7 @@ export default function Home() {
   return (
     <Surface style={[styles.container, { paddingTop: StatusBar.currentHeight }]}>
       <Header />
-      <ScrollView>
-        <Stories />
-        <Posts />
-      </ScrollView>
+      <Posts />
     </Surface>
   );
 }
