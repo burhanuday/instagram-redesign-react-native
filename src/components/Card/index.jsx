@@ -10,8 +10,6 @@ import Caption from "./Caption";
 
 const Post = ({ openScreen, post }) => {
   const navigation = useNavigation();
-  console.log(post);
-
   return (
     <TouchableWithoutFeedback
       onPress={() =>

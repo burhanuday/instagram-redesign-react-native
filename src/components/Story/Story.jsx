@@ -3,7 +3,7 @@ import { StyleSheet, View, Image } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTheme } from "react-native-paper";
 
-const Story = ({ index }) => {
+const Story = ({ index, story }) => {
   const { colors } = useTheme();
 
   return (
@@ -11,8 +11,7 @@ const Story = ({ index }) => {
       <Image
         style={styles.avatar}
         source={{
-          uri:
-            "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
+          uri: story.avatar,
         }}
       />
       {index === 0 && (

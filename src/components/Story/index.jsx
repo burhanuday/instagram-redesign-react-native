@@ -3,7 +3,7 @@ import { FlatList, View, StyleSheet } from "react-native";
 
 import Story from "./Story";
 
-const posts = [1, 2, 3, 4, 5];
+import { stories } from "../../mock/stories";
 
 const Stories = () => {
   return (
@@ -11,10 +11,10 @@ const Stories = () => {
       <FlatList
         style={styles.container}
         showsHorizontalScrollIndicator={false}
-        data={posts}
+        data={stories}
         horizontal={true}
-        renderItem={({ item, index }) => <Story index={index} />}
-        keyExtractor={(item) => `${item}key`}
+        renderItem={({ item, index }) => <Story story={item} index={index} />}
+        keyExtractor={(item) => `${item.id}key`}
       />
     </View>
   );
