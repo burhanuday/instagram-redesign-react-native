@@ -5,31 +5,28 @@ import Card from "@components/Card";
 import Comments from "@components/Card/Comments";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-export default function PostDetail() {
+export default function PostDetail({ route }) {
   const { colors } = useTheme();
+  const { post } = route.params;
 
   return (
-    <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
-      <Surface style={[styles.container, { paddingTop: StatusBar.currentHeight }]}>
-        <Card openScreen={false} />
-        <Comments />
-
-        <Surface style={[styles.commentBox]}>
-          <TextInput
-            style={[styles.commentInput, { color: colors.onSurface }]}
-            placeholder="Type comment"
-          />
-          <MaterialCommunityIcons name="send" size={22} color={colors.onSurface} />
-        </Surface>
+    <Surface style={[styles.container, { paddingTop: StatusBar.currentHeight }]}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Card post={post} openScreen={false} />
+        <Comments comments={post.comments} />
+      </ScrollView>
+      <Surface style={[styles.commentBox]}>
+        <TextInput
+          style={[styles.commentInput, { color: colors.onSurface }]}
+          placeholder="Type comment"
+        />
+        <MaterialCommunityIcons name="send" size={22} color={colors.onSurface} />
       </Surface>
-    </ScrollView>
+    </Surface>
   );
 }
 
 const styles = StyleSheet.create({
-  // scroll: {
-  //   flex: 1,
-  // },
   container: {
     flex: 1,
     position: "relative",

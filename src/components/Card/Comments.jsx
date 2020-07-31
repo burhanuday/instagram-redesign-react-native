@@ -4,13 +4,13 @@ import { Card, Text } from "react-native-paper";
 
 import Comment from "./Comment";
 
-const Comments = () => {
+const Comments = ({ comments }) => {
   return (
     <Card style={styles.card} elevation={5}>
       <Text style={styles.title}>Comments:</Text>
-      <Comment />
-      <Comment />
-      <Comment />
+      {comments.map((comment) => (
+        <Comment key={comment.username} comment={comment} />
+      ))}
     </Card>
   );
 };

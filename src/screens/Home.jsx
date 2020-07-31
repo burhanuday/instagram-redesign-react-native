@@ -6,13 +6,13 @@ import Card from "@components/Card";
 import Stories from "@components/Story";
 import Header from "@components/Header";
 
-const posts = [1, 2, 3, 4, 5];
+import { posts } from "../mock/posts";
 
 const Posts = () => (
   <FlatList
     data={posts}
-    renderItem={({ item }) => <Card openScreen={true} />}
-    keyExtractor={(item) => `${item}key`}
+    renderItem={({ item }) => <Card openScreen={true} post={item} />}
+    keyExtractor={(item) => `${item.id}key`}
   />
 );
 

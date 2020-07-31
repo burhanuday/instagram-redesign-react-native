@@ -8,16 +8,25 @@ import PostImage from "./PostImage";
 import CardActions from "./CardActions";
 import Caption from "./Caption";
 
-const Post = ({ openScreen }) => {
+const Post = ({ openScreen, post }) => {
   const navigation = useNavigation();
+  console.log(post);
 
   return (
-    <TouchableWithoutFeedback onPress={() => (openScreen ? navigation.push("PostDetail") : null)}>
+    <TouchableWithoutFeedback
+      onPress={() =>
+        openScreen
+          ? navigation.push("PostDetail", {
+              post: post,
+            })
+          : null
+      }
+    >
       <Card style={styles.card} elevation={5}>
-        <Header />
-        <PostImage />
-        <CardActions />
-        <Caption />
+        <Header name={post.name} avatar={post.avatar} time={post.time_posted} />
+        <PostImage url={post.url} />
+        <CardActions likeCount={post.likeCount} commentCount={post.commentCount} />
+        <Caption caption={post.caption} username={post.username} />
       </Card>
     </TouchableWithoutFeedback>
   );

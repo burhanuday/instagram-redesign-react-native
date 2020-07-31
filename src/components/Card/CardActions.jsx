@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 import { useTheme, Text } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const CardActions = () => {
+const CardActions = ({ likeCount, commentCount }) => {
   const { colors } = useTheme();
 
   return (
@@ -11,11 +11,11 @@ const CardActions = () => {
       <View style={styles.row}>
         <View style={styles.action}>
           <MaterialCommunityIcons name="heart-outline" size={24} color={colors.onSurface} />
-          <Text style={styles.actionText}>2,545</Text>
+          <Text style={styles.actionText}>{likeCount}</Text>
         </View>
         <View style={styles.action}>
           <MaterialCommunityIcons name="message-text-outline" size={24} color={colors.onSurface} />
-          <Text style={styles.actionText}>361</Text>
+          <Text style={styles.actionText}>{commentCount}</Text>
         </View>
       </View>
 

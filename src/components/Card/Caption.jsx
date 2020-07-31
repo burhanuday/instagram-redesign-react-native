@@ -3,12 +3,12 @@ import { StyleSheet } from "react-native";
 import { View } from "react-native";
 import { Text } from "react-native-paper";
 
-const Caption = () => {
+const Caption = ({ caption, username }) => {
   return (
     <View style={styles.container}>
       <Text>
-        <Text style={styles.username}>{"martins "}</Text> It is a long established fact that a
-        reader will be distracted by the readable content of a page when looking at its layout
+        <Text style={styles.username}>{username} </Text>
+        {caption}
       </Text>
     </View>
   );

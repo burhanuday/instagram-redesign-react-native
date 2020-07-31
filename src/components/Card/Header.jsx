@@ -3,7 +3,7 @@ import { StyleSheet, Image, View } from "react-native";
 import { useTheme, Text } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const Header = () => {
+const Header = ({ name, avatar, time }) => {
   const { colors } = useTheme();
 
   return (
@@ -12,13 +12,12 @@ const Header = () => {
         <Image
           style={styles.avatar}
           source={{
-            uri:
-              "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
+            uri: avatar,
           }}
         />
         <View style={styles.headerContent}>
-          <Text style={styles.name}>Sam Martin</Text>
-          <Text style={styles.time}>5 min ago</Text>
+          <Text style={styles.name}>{name}</Text>
+          <Text style={styles.time}>{time}</Text>
         </View>
       </View>
 
