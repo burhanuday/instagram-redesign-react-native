@@ -1,6 +1,6 @@
 const baseImageURL = "https://picsum.photos/400";
 const baseAvatarUrl = "https://picsum.photos/100";
-// `${baseImageURL}?random=${Math.random() * 100}`
+// [`${baseImageURL}?random=${Math.random() * 100}`, `${baseImageURL}?random=${Math.random() * 100}`, `${baseImageURL}?random=${Math.random() * 100}`]
 // `${baseAvatarUrl}?random=${Math.random() * 100}`
 
 export const posts = [
@@ -8,7 +8,11 @@ export const posts = [
     id: 1,
     name: "Brannon Stonebridge",
     time_posted: "5:46 PM",
-    url: `${baseImageURL}?random=${Math.random() * 100}`,
+    url: [
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+    ],
     caption: "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
     likeCount: 179,
     commentCount: 39,
@@ -35,7 +39,11 @@ export const posts = [
     id: 2,
     name: "Ricardo Devin",
     time_posted: "8:49 AM",
-    url: `${baseImageURL}?random=${Math.random() * 100}`,
+    url: [
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+    ],
     caption:
       "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
     likeCount: 103,
@@ -54,7 +62,11 @@ export const posts = [
     id: 3,
     name: "Pamella Fitter",
     time_posted: "12:32 PM",
-    url: `${baseImageURL}?random=${Math.random() * 100}`,
+    url: [
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+    ],
     caption:
       "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
     likeCount: 379,
@@ -83,7 +95,11 @@ export const posts = [
     id: 4,
     name: "Norina Sills",
     time_posted: "6:55 AM",
-    url: `${baseImageURL}?random=${Math.random() * 100}`,
+    url: [
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+    ],
     caption:
       "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     likeCount: 1792,
@@ -122,7 +138,11 @@ export const posts = [
     id: 5,
     name: "Chloette Paulack",
     time_posted: "7:27 AM",
-    url: `${baseImageURL}?random=${Math.random() * 100}`,
+    url: [
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+    ],
     caption:
       "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
     likeCount: 1017,
@@ -160,7 +180,11 @@ export const posts = [
     id: 6,
     name: "Myrtle Antognazzi",
     time_posted: "12:00 PM",
-    url: `${baseImageURL}?random=${Math.random() * 100}`,
+    url: [
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+    ],
     caption: "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
     likeCount: 1267,
     commentCount: 39,
@@ -178,7 +202,11 @@ export const posts = [
     id: 7,
     name: "Zena Handasyde",
     time_posted: "2:19 AM",
-    url: `${baseImageURL}?random=${Math.random() * 100}`,
+    url: [
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+      `${baseImageURL}?random=${Math.random() * 100}`,
+    ],
     caption:
       "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
     likeCount: 1396,

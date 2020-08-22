@@ -1,12 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, View, Image } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTheme } from "react-native-paper";
 import { LinearGradient } from "expo-linear-gradient";
 
 const Story = ({ index, story }) => {
-  const { colors } = useTheme();
-
   return (
     <View style={[styles.container, index === 0 ? { marginLeft: 10 } : null]}>
       <LinearGradient
@@ -14,12 +12,13 @@ const Story = ({ index, story }) => {
         colors={
           !story.viewed
             ? ["#F58529", "#FEDA77", "#DD2A7B", "#8134AF", "#515BD4"]
-            : ["transparent", "transparent"]
+            : ["lightgray", "lightgray"]
         }
         style={styles.gradient}
       >
         <Image
           style={styles.avatar}
+          defaultSource={require("../../../assets/place.png")}
           source={{
             uri: story.avatar,
           }}
@@ -39,16 +38,16 @@ const Story = ({ index, story }) => {
 
 const styles = StyleSheet.create({
   gradient: {
-    height: 76,
-    width: 76,
-    borderRadius: 38,
+    height: 66,
+    width: 66,
+    borderRadius: 33,
     justifyContent: "center",
     alignItems: "center",
   },
   avatar: {
-    height: 70,
-    width: 70,
-    borderRadius: 35,
+    height: 60,
+    width: 60,
+    borderRadius: 30,
   },
   container: {
     padding: 5,
