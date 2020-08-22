@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, View, Platform } from "react-native";
 import Carousel, { ParallaxImage, Pagination } from "react-native-snap-carousel";
+import { useTheme } from "react-native-paper";
 
 const renderItem = ({ item, index }, parallaxProps) => {
   return (
@@ -18,6 +19,7 @@ const renderItem = ({ item, index }, parallaxProps) => {
 
 const PostImage = ({ url }) => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const { colors } = useTheme();
 
   return (
     <View style={styles.postImageContainer}>
@@ -33,7 +35,7 @@ const PostImage = ({ url }) => {
         dotsLength={url.length}
         activeDotIndex={activeSlide}
         containerStyle={styles.paginationContainer}
-        dotStyle={styles.dotStyle}
+        dotStyle={[styles.dotStyle, { backgroundColor: colors.onSurface }]}
         inactiveDotStyle={styles.inactiveDotStyle}
         inactiveDotOpacity={0.4}
         inactiveDotScale={0.6}
