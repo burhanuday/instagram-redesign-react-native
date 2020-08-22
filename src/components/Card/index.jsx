@@ -7,6 +7,7 @@ import Header from "./Header";
 import PostImage from "./PostImage";
 import CardActions from "./CardActions";
 import Caption from "./Caption";
+import Comments from "./Comments";
 
 const Post = ({ openScreen, post }) => {
   const navigation = useNavigation();
@@ -26,6 +27,7 @@ const Post = ({ openScreen, post }) => {
         <PostImage url={post.url} />
         <CardActions likeCount={post.likeCount} commentCount={post.commentCount} />
         <Caption caption={post.caption} username={post.username} />
+        <Comments comments={post.comments} />
       </Card>
     </>
     // </TouchableWithoutFeedback>
