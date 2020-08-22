@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
 
   actionsContainer: {
-    marginTop: 15,
+    marginTop: 0,
     flexDirection: "row",
   },
   action: {
