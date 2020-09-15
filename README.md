@@ -3,8 +3,7 @@
 Re-imagining Instagram with React Native
 
 ## Screenshots
-<img src="screenshots/day-mode.jpeg" height="300em" />
-<img src="screenshots/night-mode.jpeg" height="300em" />
+<img src="screenshots/day-mode.jpeg" height="300em" /><img src="screenshots/night-mode.jpeg" height="300em" />
 
 ## License
 ```
