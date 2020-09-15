@@ -1,48 +1,18 @@
-# Expo Boilerplate
+# Instagram Redesign
 
-A highly opinionated boilerplate for React Native Expo apps. Aimed at to be used in quickly prototyping projects without having to setup new codebases everytime! 
+Re-imagining Instagram with React Native
 
-## Features
-1. Absolute imports
-```
-Import components, screens and hooks with
-import Input from "@components/formik";
-import Home from "@screens/Home";
-import useHook from "@hooks/useHook";
-```
-
-2. Uses React Native Paper for components. Inbuilt day-night theming for components
-
-3. Uses React Navigation for navigation. Automatic day-night theming for headers and other components
-
-4. Extends `eslint-config` from the `@react-native-community/eslint-config`
-
-5. Formik and Yup for forms and validation. Custom components for integration of react-native-paper and Formik in the `components/formik` folder
-
-6. Axios as the default networking library
-
-7. Redux with Thunks for state management
-
-8. Reactotron for logging, redux actions and state viewing
-
-9. `moment` for time library
-
-10. `react-native-svg` and `react-native-svg-transformer` for using svg images in the app
-
-11. Husky and lint-staged for precommit linting and formatting
-
-12. Uses prettier as the formatter
-
-13. React Native Reanimated for animation library
-
-## Usage
-```
-git clone https://github.com/burhanuday/expo-boilerplate.git
-cd expo-boilerplate
-rm -rf .git
-yarn
-yarn start
-```
+## Screenshots
+<img src="screenshots/day-mode.jpeg" height="300em" />
+<img src="screenshots/night-mode.jpeg" height="300em" />
 
 ## License
-```MIT```
+```
+Copyright 2020 Burhanuddin Udaipurwala
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
