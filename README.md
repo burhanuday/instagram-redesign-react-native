@@ -11,6 +11,14 @@ Re-imagining Instagram with React Native
 - Install dependencies with `yarn`
 - Start the expo app `yarn start`
 
+## Features
+1. Instagram like Feed
+2. Instagram Stories view
+3. Multiple images in the same post with parallax effect
+
+## TODO
+1. Implement other pages like Explore, Profile, Notifications and Upload
+
 ## License
 ```
 Copyright 2020 Burhanuddin Udaipurwala
