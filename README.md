@@ -5,6 +5,12 @@ Re-imagining Instagram with React Native
 ## Screenshots
 <img src="screenshots/day-mode.jpeg" height="300em" /><img src="screenshots/night-mode.jpeg" height="300em" />
 
+## To run the app
+- Clone the repository with `git clone  https://github.com/burhanuday/instagram-redesign-react-native`
+- cd into the folder `cd instagram-redesign-react-native`
+- Install dependencies with `yarn`
+- Start the expo app `yarn start`
+
 ## License
 ```
 Copyright 2020 Burhanuddin Udaipurwala
